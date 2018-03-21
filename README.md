@@ -7,7 +7,29 @@
 
 ## Scenario  <a name= "scenario"></a>
 
-## Approach -- no more than 4 points <a name= "approach"> </a>
+Build a website hosted in the cloud (e.g. AWS, Google, Heroku) that asks for and stores a simple
+rating score for using ft.com
+
+Provide a diagram of your site architecture showing key compnents that illustrate your approach.
+
+*Extra*
+ - Templated infrastructure as code
+ - Automated testing
+ - Origami Compnents/FT look and feel
+ - The ability to view the ratings/results
+
+ *Potential tools*
+ - AWS (EC2, RDS, Lambda, DynamoDB)
+
+ - Cloudformation
+
+ - Docker
+
+ - Ansible
+
+## Approach <a name= "approach"> </a>
+
+Step 1: Research the tech
 
 #### Targets (Written before starting) - no more than 4 points
 
