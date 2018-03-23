@@ -2,11 +2,11 @@
 
 ruby '~> 2.4.0'
 
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
 group :test do
   gem 'capybara'
   gem 'rspec'
   gem 'rubocop', '~> 0.54.0'
-  gem 'simplecov', :require => false
+  gem 'simplecov', require: false
 end
