@@ -7,6 +7,7 @@ class Rating
   include DataMapper::Resource
 
   MAX_SCORE = 5
+  MIN_SCORE = 0
 
   property :id, Serial
   property :score, Integer, required: true
@@ -19,7 +20,8 @@ class Rating
 
   def within_range
     return true if score.nil?
-    score <= MAX_SCORE ? true : [ false, "Score must be below #{MAX_SCORE}" ]
+    return true if (score <= MAX_SCORE and score >= MIN_SCORE)
+    [false, "Score must be below #{MAX_SCORE}"]
   end
 end
 

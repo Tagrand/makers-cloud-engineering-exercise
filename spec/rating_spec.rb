@@ -13,6 +13,10 @@ describe Rating do
     it 'should not save with a score above the max' do
       expect { Rating.create(score: Rating::MAX_SCORE + 1) }.not_to change(Rating, :count)
     end
+
+    it 'should not save with a score below the min' do
+      expect { Rating.create(score: Rating::MIN_SCORE - 1) }.not_to change(Rating, :count)
+    end
   end
 
   describe '#score_messages' do

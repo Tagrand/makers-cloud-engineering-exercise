@@ -17,7 +17,7 @@ feature 'visit site add a rating' do
     expect { click_button 'Submit' }.to change(Rating, :count).by 1
   end
 
-  scenario 'no score does not get logged' do
+  scenario 'no score gets error' do
     click_button 'Submit'
     expect(page).to have_content('Score must not be blank')
     expect(page).not_to have_content('Thanks for your feedback!')
