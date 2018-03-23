@@ -1,9 +1,17 @@
+# frozen_string_literal: true
+
 require 'sinatra/base'
 
 class FTFeedback < Sinatra::Base
-
   get '/' do
-   'welcome to the FT\'s rating site'
+    erb :index
   end
 
+  post '/' do
+    redirect '/thanks'
+  end
+
+  get '/thanks' do
+    'Thanks for your feedback!'
+  end
 end
