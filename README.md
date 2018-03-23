@@ -31,8 +31,7 @@ Provide a diagram of your site architecture showing key compnents that illustrat
 
 So my focus was to break down the task into clear smaller steps. So I broke the project down into versions (or checkpoints).
 My reasonsing for this, was rather than design everything in one go and then go off and code, I had clear points to stop, reflect and adapt my plans.  
-Also by focusing on reaching the smaller targets, I keep my programme simpler to start with and if I turn out to do something badly, its easier to turn back and
-correct.
+Also by focusing on reaching the smaller targets, I keep my programme simpler to start with and if I turn out to do something badly, its easier to turn back and  correct.
 
 This approach to design is something I am trialing so any feedback would be really helpful.
 
@@ -45,7 +44,7 @@ its totally new to me (but is also heavily used by the FT.)
 - Only focus on reaching a checkpoint, don't worry about the extra complexity until you get there.
 - Use AWS to deploy the website
 - Keep it as simple as possible
-- Reflect on my architecture and design frequently (especially at designated checkpoints) to check if there is any way of improving it further. 
+- Reflect on my architecture and design frequently (especially at designated checkpoints) to check if there is any way of improving it further.
 
 ## Extentions <a name= "reflections"> </a>
 
@@ -53,9 +52,14 @@ its totally new to me (but is also heavily used by the FT.)
 
 ## Architecture <a name= "architecture"> </a>
 
+
 ## Versions <a name= "user_stories"> </a>
 
 V1: You are asked for a rating on a locally hosted website and it stores the ratings
+  - [x] You can visit a site
+  - [x] You can submit a rating or any sort
+  - You can store the rating in a database
+  - You can only add ratings of 1 - 5
 
 V2: You are asked for a rating on a hosted website  (MVP)
 
