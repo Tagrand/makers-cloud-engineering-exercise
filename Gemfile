@@ -4,9 +4,9 @@ ruby '~> 2.4.0'
 
 source 'https://rubygems.org'
 
-gem 'sinatra'
 gem 'data_mapper'
 gem 'dm-mysql-adapter'
+gem 'sinatra'
 
 group :test do
   gem 'capybara'

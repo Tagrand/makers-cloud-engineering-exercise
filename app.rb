@@ -15,5 +15,5 @@ class FTFeedback < Sinatra::Base
     'Thanks for your feedback!'
   end
 
-   run! if app_file == $0
+  run! if app_file == $PROGRAM_NAME
 end
