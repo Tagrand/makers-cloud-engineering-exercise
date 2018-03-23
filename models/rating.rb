@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'data_mapper'
 require 'dm-mysql-adapter'
 
@@ -8,6 +10,6 @@ class Rating
   property :score, Integer
 end
 
-DataMapper.setup(:default, "mysql://ft@localhost/ft")
+DataMapper.setup(:default, "mysql://ft@localhost/ft_#{ENV['RACK_ENV']}")
 DataMapper.finalize
-DataMapper.auto_migrate!
+DataMapper.auto_upgrade!

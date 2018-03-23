@@ -5,8 +5,8 @@ ruby '~> 2.4.0'
 source 'https://rubygems.org'
 
 gem 'data_mapper'
-gem 'dm-mysql-adapter'
 gem 'dm-migrations'
+gem 'dm-mysql-adapter'
 gem 'sinatra'
 
 group :test do

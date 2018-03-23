@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+ENV['RACK_ENV'] ||= 'dev'
 
 require 'sinatra/base'
 
