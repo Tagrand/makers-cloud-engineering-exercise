@@ -20,7 +20,7 @@ class FTFeedback < Sinatra::Base
     if result.save
       flash.next[:message] = 'Thanks for your feedback!'
     else
-      flash.next[:error] = result.errors[:score].first
+      flash.next[:error] = result.score_messages
     end
     redirect '/'
   end

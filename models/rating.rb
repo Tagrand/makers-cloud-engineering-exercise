@@ -10,7 +10,7 @@ class Rating
   property :score, Integer, required: true
 
   def score_messages
-    self.errors[:score].first
+    errors[:score].first
   end
 end
 
