@@ -3,6 +3,7 @@
 require './app.rb'
 require 'capybara/rspec'
 require 'simplecov'
+require './models/rating'
 
 Capybara.app = FTFeedback
 SimpleCov.start

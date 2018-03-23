@@ -123,6 +123,7 @@ PLATFORMS
 DEPENDENCIES
   capybara
   data_mapper
+  dm-migrations
   dm-mysql-adapter
   rspec
   rubocop (~> 0.54.0)

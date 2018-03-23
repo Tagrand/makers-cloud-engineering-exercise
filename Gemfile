@@ -6,6 +6,7 @@ source 'https://rubygems.org'
 
 gem 'data_mapper'
 gem 'dm-mysql-adapter'
+gem 'dm-migrations'
 gem 'sinatra'
 
 group :test do
