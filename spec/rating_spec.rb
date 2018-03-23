@@ -28,7 +28,13 @@ describe Rating do
     it 'returns error message when score is too high' do
       max = Rating::MAX_SCORE
       result = Rating.create(score: max + 1)
-      expect(result.score_messages).to eq("Score must be below #{max}")
+      expect(result.score_messages).to eq("Score must be between #{Rating::MIN_SCORE} and #{max}")
+    end
+
+    it 'returns error message when score is too low' do
+      min = Rating::MIN_SCORE
+      result = Rating.create(score: min - 1)
+      expect(result.score_messages).to eq("Score must be between #{min} and #{Rating::MAX_SCORE}")
     end
   end
 end
