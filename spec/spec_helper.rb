@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 ENV['RACK_ENV'] = 'test'
 
 require './app.rb'
@@ -21,7 +22,6 @@ RSpec.configure do |config|
 end
 
 RSpec.configure do |config|
-
   config.before(:suite) do
     DatabaseCleaner.strategy = :transaction
     DatabaseCleaner.clean_with(:truncation)
@@ -32,5 +32,4 @@ RSpec.configure do |config|
       example.run
     end
   end
-
 end

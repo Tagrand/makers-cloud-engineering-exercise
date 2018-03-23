@@ -58,7 +58,7 @@ its totally new to me (but is also heavily used by the FT.)
 V1: You are asked for a rating on a locally hosted website and it stores the ratings
   - [x] You can visit a site
   - [x] You can submit a rating or any sort
-  - You can store the rating in a database
+  - [x] You can store the rating in a database
   - You can only add ratings of 1 - 5
 
 V2: You are asked for a rating on a hosted website  (MVP)
