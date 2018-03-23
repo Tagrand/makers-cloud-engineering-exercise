@@ -29,16 +29,16 @@ Provide a diagram of your site architecture showing key compnents that illustrat
 
 ## Approach <a name= "approach"> </a>
 
-So my focus was to break down the task into clear smaller steps. So I broke the project down into versions (or checkpoints).
+My focus is to break down the task into lots of smaller steps - to this I created versions at the start of the project to act as checkpoints.
 My reasonsing for this, was rather than design everything in one go and then go off and code, I had clear points to stop, reflect and adapt my plans.  
-Also by focusing on reaching the smaller targets, I keep my programme simpler to start with and if I turn out to do something badly, its easier to turn back and  correct.
+Also by focusing on reaching the smaller targets, I keep my programme simpler to start with and if I turn out to do something badly, its easier to turn back and change.
 
-This approach to design is something I am trialing so any feedback would be really helpful.
+This approach to design is something I am trialing so any feedback would be really helpful. In my commits I've tried to add explanations for the order of my decisions.
 
-I decided to do the task in Ruby, as this website is quite light and I felt that doing it with Sinatra and Datamapper were small
-enough tools for the job. Also Capybara and Rspec are excellent for testing this site.
+I decided to do the task in Ruby, as this website is quite light and I felt that doing it with Sinatra and Datamapper were simple
+enough tools for the job. This would give me space to challenge myself in other ways (particularly using AWS for the first time.)
 My original plan is to use AWS to deploy the site as a challenge, as there seems to be good support for Ruby and
-its totally new to me (but is also heavily used by the FT.)
+its totally new to me (but is also heavily used by the FT.) Also I have added a version where I use Origimi, because this looks great. 
 
 #### Targets (Written before starting) - no more than 4 points
 - Only focus on reaching a checkpoint, don't worry about the extra complexity until you get there.
@@ -72,3 +72,6 @@ V4: Make it stylish, to look like the FT
 ## Screen shots <a name= "screen_shots"> </a>
 
 ## Tech <a name= "tech"> </a>
+Ruby
+Sinatra   
+MySQL (I've used SQLite3 and PSQL so I wanted to try this out, and I believe it works well with AWS)
