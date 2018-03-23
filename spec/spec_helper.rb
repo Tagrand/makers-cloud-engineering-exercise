@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
+require './app.rb'
+require 'capybara/rspec'
 require 'simplecov'
+
+Capybara.app = FTFeedback
 SimpleCov.start
 
 RSpec.configure do |config|
