@@ -61,7 +61,7 @@ V1: You are asked for a rating on a locally hosted website and it stores the rat
   - [x] You can store the rating in a database
   - You can only add ratings of 1 - 5
 
-V2: You are asked for a rating on a hosted website  (MVP)
+V2: You are asked for a rating on a hosted website  (MVP)  - Thing to note, should I just make it a single page app?
 
 V3: You can see previous (all ratings) on another page, previous ratings
 
