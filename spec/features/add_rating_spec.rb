@@ -8,6 +8,7 @@ feature 'visit site add a rating' do
   scenario 'of five stars and recieve confirmation' do
     choose(5)
     click_button 'Submit'
+    expect(page).not_to have_content('Score must not be blank')
     expect(page).to have_content('Thanks for your feedback!')
   end
 
@@ -18,6 +19,7 @@ feature 'visit site add a rating' do
 
   scenario 'no score does not get logged' do
     click_button 'Submit'
-    expect(page).to have_content('Error')
+    expect(page).to have_content('Score must not be blank')
+    expect(page).not_to have_content('Thanks for your feedback!')
   end
 end
