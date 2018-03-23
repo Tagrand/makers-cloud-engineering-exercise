@@ -9,10 +9,12 @@ class FTFeedback < Sinatra::Base
   end
 
   post '/' do
+    Rating.create(score: params[:ratin])
     redirect '/thanks'
   end
 
   get '/thanks' do
+
     'Thanks for your feedback!'
   end
 
