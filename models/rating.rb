@@ -6,11 +6,20 @@ require 'dm-mysql-adapter'
 class Rating
   include DataMapper::Resource
 
+  MAX_SCORE = 5
+
   property :id, Serial
   property :score, Integer, required: true
 
+  validates_with_method :score, method: :within_range
+
   def score_messages
     errors[:score].first
+  end
+
+  def within_range
+    return true if score.nil?
+    score <= MAX_SCORE
   end
 end
 

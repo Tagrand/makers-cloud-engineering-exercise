@@ -6,11 +6,15 @@ describe Rating do
       expect { Rating.create(score: 5) }.to change(Rating, :count).by 1
     end
 
-    it 'should have a score' do
+    it 'should not save without a score' do
       expect { Rating.create }.not_to change(Rating, :count)
     end
+
+    it 'should not save with a score above the max' do
+      expect { Rating.create(score: 6) }.not_to change(Rating, :count)
+    end
   end
-  
+
   describe '#score_messages' do
     it 'returns error message when score is nil' do
       result = Rating.create
