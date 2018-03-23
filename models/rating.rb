@@ -19,7 +19,7 @@ class Rating
 
   def within_range
     return true if score.nil?
-    score <= MAX_SCORE
+    score <= MAX_SCORE ? true : [ false, "Score must be below #{MAX_SCORE}" ]
   end
 end
 
