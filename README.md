@@ -38,7 +38,7 @@ This approach to design is something I am trialing so any feedback would be real
 I decided to do the task in Ruby, as this website is quite light and I felt that doing it with Sinatra and Datamapper were simple
 enough tools for the job. This would give me space to challenge myself in other ways (particularly using AWS for the first time.)
 My original plan is to use AWS to deploy the site as a challenge, as there seems to be good support for Ruby and
-its totally new to me (but is also heavily used by the FT.) Also I have added a version where I use Origimi, because this looks great. 
+its totally new to me (but is also heavily used by the FT.) Also I have added a version where I use Origimi, because this looks great.
 
 #### Targets (Written before starting) - no more than 4 points
 - Only focus on reaching a checkpoint, don't worry about the extra complexity until you get there.
@@ -59,9 +59,10 @@ V1: You are asked for a rating on a locally hosted website and it stores the rat
   - [x] You can visit a site
   - [x] You can submit a rating or any sort
   - [x] You can store the rating in a database
+  - [x] Make it a single page site
   - You can only add ratings of 1 - 5
 
-V2: You are asked for a rating on a hosted website  (MVP)  - Thing to note, should I just make it a single page app?
+V2: You are asked for a rating on a hosted website  (MVP)
 
 V3: You can see previous (all ratings) on another page, previous ratings
 
