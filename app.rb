@@ -10,7 +10,7 @@ class FTFeedback < Sinatra::Base
   end
 
   post '/' do
-    Rating.create(score: params[:ratin])
+    Rating.create(score: params[:rating].to_i)
     redirect '/thanks'
   end
 
