@@ -10,12 +10,21 @@ class FTFeedback < Sinatra::Base
   end
 
   post '/' do
-    Rating.create(score: params[:rating].to_i)
-    redirect '/thanks'
+    score = params[:rating].to_i unless params[:rating].nil?
+    result = Rating.new(score: score)
+    if result.save
+      redirect '/thanks'
+    else
+      redirect '/error'
+    end
   end
 
   get '/thanks' do
     'Thanks for your feedback!'
+  end
+
+  get '/error' do
+    'Error'
   end
 
   run! if app_file == $PROGRAM_NAME
