@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 feature 'visit site add a rating' do
-
   before do
     visit '/'
   end

@@ -7,7 +7,7 @@ class Rating
   include DataMapper::Resource
 
   property :id, Serial
-  property :score, Integer, :required => true
+  property :score, Integer, required: true
 end
 
 DataMapper.setup(:default, "mysql://ft@localhost/ft_#{ENV['RACK_ENV']}")

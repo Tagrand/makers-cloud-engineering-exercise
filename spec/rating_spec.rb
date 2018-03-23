@@ -6,6 +6,6 @@ describe Rating do
   end
 
   it 'should have a score' do
-    expect { Rating.create() }.not_to change(Rating, :count)
+    expect { Rating.create }.not_to change(Rating, :count)
   end
 end

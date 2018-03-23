@@ -8,6 +8,7 @@ gem 'data_mapper'
 gem 'dm-migrations'
 gem 'dm-mysql-adapter'
 gem 'sinatra'
+gem 'sinatra-flash'
 
 group :test do
   gem 'capybara'
