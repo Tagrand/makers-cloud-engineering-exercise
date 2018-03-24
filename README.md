@@ -60,7 +60,7 @@ V1: You are asked for a rating on a locally hosted website and it stores the rat
   - [x] You can submit a rating or any sort
   - [x] You can store the rating in a database
   - [x] Make it a single page site
-  - You can only add ratings of 1 - 5
+  - [] You can only add ratings of 1 - 5
 
 V2: You are asked for a rating on a hosted website  (MVP)
 
