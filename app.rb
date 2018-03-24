@@ -4,6 +4,7 @@ ENV['RACK_ENV'] ||= 'dev'
 
 require 'sinatra/base'
 require 'sinatra/flash'
+require './models/rating'
 
 class FTFeedback < Sinatra::Base
   enable :sessions
@@ -25,5 +26,4 @@ class FTFeedback < Sinatra::Base
     redirect '/'
   end
 
-  run! if app_file == $PROGRAM_NAME
 end

@@ -9,6 +9,7 @@ gem 'dm-migrations'
 gem 'dm-mysql-adapter'
 gem 'sinatra'
 gem 'sinatra-flash'
+gem 'json', '1.8.6'
 
 group :test do
   gem 'capybara'
