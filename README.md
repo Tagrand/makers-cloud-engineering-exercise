@@ -46,7 +46,11 @@ its totally new to me (but is also heavily used by the FT.) Also I have added a 
 - Keep it as simple as possible
 - Reflect on my architecture and design frequently (especially at designated checkpoints) to check if there is any way of improving it further.
 
-## Extentions <a name= "reflections"> </a>
+## Reflection <a name= "reflections"> </a>
+V1 reflections
+Having reached version one. I've been pleased with keeping the programme simple and leaving it extendable in the future. It would have been good to have focused on making a one page site from the start, as this is the simplest way to meet the brief. However, I definately want to improve on my commit messages. Also I have forgotten to run rubocop at several points. So I have put reminders whenever I run rspec to run rubocop and rspec.
+
+Part of me still thinks I should have gone with a JSON file or another file to store ratings, rather than a full MySQL database. However, I decided to stick with it, since I wanted to show I could integrate a website with a database on a cloud platform. But probably doing this again, I'd try just using a JSON file.
 
 #### With more time I would have:
 
@@ -55,15 +59,19 @@ its totally new to me (but is also heavily used by the FT.) Also I have added a 
 
 ## Versions <a name= "user_stories"> </a>
 
-V1: You are asked for a rating on a locally hosted website and it stores the ratings
+V1: You are asked for a rating on a locally hosted website and it stores the ratings  
   - [x] You can visit a site
   - [x] You can submit a rating or any sort
   - [x] You can store the rating in a database
   - [x] Make it a single page site
-  - [] You can only add ratings of 1 - 5
+  - [x] You can only add ratings of 1 - 5
+
+- [x] Complete
 
 V2: You are asked for a rating on a hosted website  (MVP)
-
+  - [ ] Set up Travis for Github
+  - [ ] Deploy up the site on AWS
+  
 V3: You can see previous (all ratings) on another page, previous ratings
 
 V4: Make it stylish, to look like the FT
@@ -75,4 +83,4 @@ V4: Make it stylish, to look like the FT
 ## Tech <a name= "tech"> </a>
 Ruby
 Sinatra   
-MySQL (I've used SQLite3 and PSQL so I wanted to try this out, and I believe it works well with AWS)
+MySQL (I've used SQLite3 and PSQL so I wanted to try this out, also I believe it works well with AWS)
