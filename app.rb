@@ -12,6 +12,7 @@ class FTFeedback < Sinatra::Base
   register Sinatra::Flash
 
   get '/' do
+    @rating_range = (Rating::MIN_SCORE..Rating::MAX_SCORE)
     erb :index
   end
 
