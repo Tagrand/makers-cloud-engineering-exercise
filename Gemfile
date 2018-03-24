@@ -7,9 +7,9 @@ source 'https://rubygems.org'
 gem 'data_mapper'
 gem 'dm-migrations'
 gem 'dm-mysql-adapter'
+gem 'json', '1.8.6'
 gem 'sinatra'
 gem 'sinatra-flash'
-gem 'json', '1.8.6'
 
 group :test do
   gem 'capybara'
