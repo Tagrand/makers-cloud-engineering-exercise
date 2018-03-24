@@ -1,9 +1,10 @@
-<h2 align="center"> Title </h2>
+<h2 align="center"> FT Feedback Site </h2>
+<h3> Want to say your option on the FT? Here's the place to go </h3> 
 
  <p align="center">  <a href='#scenario'>Scenario</a> |  <a href='#approach'>Approach</a>   |   <a href='#reflections'>Reflections</a> |  <a href='#architecture'>Architecture</a> |  <a href='#user_stories'>Versions</a>
  <a href='#screen_shots'>Screen Shots</a> |  <a href='#use'>How to use</a>   |   <a href='#tech'>Tech</a>
 
- # Add build status and Coverage
+# Add build status and Coverage
 
 ## Scenario  <a name= "scenario"></a>
 
@@ -20,11 +21,8 @@ Provide a diagram of your site architecture showing key compnents that illustrat
 
  *Potential tools*
  - AWS (EC2, RDS, Lambda, DynamoDB)
-
  - Cloudformation
-
  - Docker
-
  - Ansible
 
 ## Approach <a name= "approach"> </a>
@@ -77,6 +75,27 @@ V3: You can see previous (all ratings) on another page, previous ratings
 V4: Make it stylish, to look like the FT
 
 ## How to use  <a name= "use"> </a>
+First make sure you have Ruby 2.4.0+ and MySQL installed 
+
+#### Database setup
+Then set up a Dev and Test database in the MySQL bash
+
+```CREATE DATABASE ft_test;```
+```CREATE DATABASE ft_development;```
+
+I've called the user ft@localhost, you can either give this permissions to these two databases, or change the 
+user in the ratings file. Either way in my MySQL base:
+``` 
+GRANT ALL PRIVILEGES ON ft_test.* TO 'ft'@'localhost;'
+GRANT ALL PRIVILEGES ON ft_development.* TO 'ft'@'localhost;' ```
+```
+#### Run site
+
+1) Copy the repo ```git clone https://github.com/Tagrand/makers-cloud-engineering-exercise.git``` 
+2) Go into the repo ```cd makers-cloud-engineering-exercise```
+3) Install gems ```bundle```
+4) Run the server ```rackup```
+5) Visit [localhost:9292](localhost:9292) to see it all in glory!  
 
 ## Screen shots <a name= "screen_shots"> </a>
 
