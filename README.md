@@ -1,5 +1,5 @@
 <h2 align="center"> FT Feedback Site </h2>
-<h3> Want to say your option on the FT? Here's the place to go </h3> 
+<h3 align="center"> Want to say your option on the FT? Here's the place to go </h3> 
 
  <p align="center">  <a href='#scenario'>Scenario</a> |  <a href='#approach'>Approach</a>   |   <a href='#reflections'>Reflections</a> |  <a href='#architecture'>Architecture</a> |  <a href='#user_stories'>Versions</a>
  <a href='#screen_shots'>Screen Shots</a> |  <a href='#use'>How to use</a>   |   <a href='#tech'>Tech</a>
