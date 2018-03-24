@@ -26,5 +26,4 @@ class FTFeedback < Sinatra::Base
     end
     redirect '/'
   end
-
 end
