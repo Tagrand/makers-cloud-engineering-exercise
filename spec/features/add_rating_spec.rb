@@ -5,6 +5,11 @@ feature 'visit site add a rating' do
     visit '/'
   end
 
+  scenario 'this an option for all the valid ratings values' do
+    total_options = Rating::MAX_SCORE - Rating::MIN_SCORE + 1
+    expect(page.all('.rating').length).to eq(total_options)
+  end
+
   scenario 'of five stars and recieve confirmation' do
     choose(5)
     click_button 'Submit'
