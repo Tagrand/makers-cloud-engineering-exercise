@@ -1,5 +1,5 @@
 <h2 align="center"> FT Feedback Site </h2>
-<h3 align="center"> Want to say your option on the FT? Here's the place to go </h3> 
+<h3 align="center"> Want to say your option on the FT? Here's the place to go </h3>
 
  <p align="center">  <a href='#scenario'>Scenario</a> |  <a href='#approach'>Approach</a>   |   <a href='#reflections'>Reflections</a> |  <a href='#architecture'>Architecture</a> |  <a href='#user_stories'>Versions</a>
  <a href='#screen_shots'>Screen Shots</a> |  <a href='#use'>How to use</a>   |   <a href='#tech'>Tech</a>
@@ -50,7 +50,13 @@ Having reached version one. I've been pleased with keeping the programme simple 
 
 Part of me still thinks I should have gone with a JSON file or another file to store ratings, rather than a full MySQL database. However, I decided to stick with it, since I wanted to show I could integrate a website with a database on a cloud platform. But probably doing this again, I'd try just using a JSON file.
 
+V2 Reflections
+Deployment has been my greatest challenge. I timeboxed a period to see if I could succeed in deploying to AWS. I've learnt alot about deployment, but I ended up pausing it as it was taking too long to achieve. This is something I want to explore more. One thing I would like to do is deploy a sandboxed static site with no database first, and then practise hooking up a database. But I was glad I moved in small steps, as I only had to reset one step to go back to before. The second challenge came when deploying to heroku. On reflection I should have taken a significant break after this challenge, and I started it to rush it. So I pulled back. Took some time. And came back and managed to deploy my site easily.
+
+Now all I need to do is implement continous integration to achieve verson 2.
+
 #### With more time I would have:
+  - Built a sandbox project, deployed it to AWS and then deployed this site to aws too
 
 ## Architecture <a name= "architecture"> </a>
 
@@ -68,14 +74,14 @@ V1: You are asked for a rating on a locally hosted website and it stores the rat
 
 V2: You are asked for a rating on a hosted website  (MVP)
   - [ ] Set up Travis for Github
-  - [ ] Deploy up the site on AWS
-  
+  - [x] Deploy up the site on AWS
+
 V3: You can see previous (all ratings) on another page, previous ratings
 
 V4: Make it stylish, to look like the FT
 
 ## How to use  <a name= "use"> </a>
-First make sure you have Ruby 2.4.0+ and MySQL installed 
+First make sure you have Ruby 2.4.0+ and MySQL installed
 
 #### Database setup
 Then set up a Dev and Test database in the MySQL bash
@@ -83,15 +89,15 @@ Then set up a Dev and Test database in the MySQL bash
 ```CREATE DATABASE ft_test;```
 ```CREATE DATABASE ft_development;```
 
-I've called the user ft@localhost, you can either give this permissions to these two databases, or change the 
+I've called the user ft@localhost, you can either give this permissions to these two databases, or change the
 user in the ratings file. Either way in my MySQL base:
-``` 
+```
 GRANT ALL PRIVILEGES ON ft_test.* TO 'ft'@'localhost;'
 GRANT ALL PRIVILEGES ON ft_development.* TO 'ft'@'localhost;' ```
 ```
 #### Run site
 
-1) Copy the repo ```git clone https://github.com/Tagrand/makers-cloud-engineering-exercise.git``` 
+1) Copy the repo ```git clone https://github.com/Tagrand/makers-cloud-engineering-exercise.git```
 2) Go into the repo ```cd makers-cloud-engineering-exercise```
 3) Install gems ```bundle```
 4) Run the server ```rackup```
