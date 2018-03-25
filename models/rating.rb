@@ -25,6 +25,6 @@ class Rating
   end
 end
 
-DataMapper.setup(:default, "mysql://ft@localhost/ft_#{ENV['RACK_ENV']}")
+DataMapper.setup(:default, ENV['CLEARDB_DATABASE_URL'], "mysql://ft@localhost/ft_#{ENV['RACK_ENV']}")
 DataMapper.finalize
 DataMapper.auto_upgrade!
