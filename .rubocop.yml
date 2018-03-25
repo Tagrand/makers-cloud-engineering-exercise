@@ -1,0 +1,8 @@
+AllCops:
+  TargetRubyVersion: 2.4.0
+
+Style/Documentation:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+ Enabled: false
