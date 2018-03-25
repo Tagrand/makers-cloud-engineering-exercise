@@ -11,6 +11,7 @@ gem 'dotenv'
 gem 'json', '1.8.6'
 gem 'sinatra'
 gem 'sinatra-flash'
+gem 'mysql2'
 
 group :test do
   gem 'capybara'

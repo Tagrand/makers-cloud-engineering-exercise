@@ -106,6 +106,7 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     mustermann (1.0.2)
+    mysql2 (0.5.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
     parallel (1.12.1)
@@ -180,6 +181,7 @@ DEPENDENCIES
   dotenv
   erb_lint
   json (= 1.8.6)
+  mysql2
   rspec
   rubocop (~> 0.54.0)
   simplecov
