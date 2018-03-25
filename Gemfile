@@ -8,7 +8,7 @@ gem 'data_mapper'
 gem 'dm-migrations'
 gem 'dm-mysql-adapter'
 gem 'dotenv'
-gem 'json', '1.8.6'
+gem 'simplecov-shield'
 gem 'sinatra'
 gem 'sinatra-flash'
 
@@ -18,5 +18,6 @@ group :test do
   gem 'erb_lint'
   gem 'rspec'
   gem 'rubocop', '~> 0.54.0'
+  gem 'rubocop-rspec'
   gem 'simplecov', require: false
 end

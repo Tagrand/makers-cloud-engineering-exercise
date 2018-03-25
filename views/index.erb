@@ -5,14 +5,30 @@
     <title></title>
   </head>
   <body>
-    <% flash.keys.each do |type| %>
-      <%= flash[type] %>
+    <%# frozen_string_literal: true
+flash.keys.each
+ do |type| %>
+      <%=# frozen_string_literal: true
+ frozen_string_literal: true
+
+flash[type]
+ %>
     <% end %>
     <h1>Welcome to the FT's rating site</h1>
     <form action='/' method='post'>
-      <% @rating_range.each do |score| %>
-        <%=  "<label for='score_#{score}'>#{score}</label>" %>
-        <%= "<input type='radio' name='rating' value=#{score} id=score_#{score} class='rating'>" %>
+      <%# frozen_string_literal: true
+@rating_range.each
+ do |score| %>
+        <%=# frozen_string_literal: true
+ frozen_string_literal: true
+
+"<label for='score_#{score}'>#{score}</label>"
+ %>
+        <%=# frozen_string_literal: true
+ frozen_string_literal: true
+
+"<input type='radio' name='rating' value=#{score} id=score_#{score} class='rating'>"
+ %>
       <% end %>
       <input type='submit' value='Submit' />
     </form>
