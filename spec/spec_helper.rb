@@ -7,6 +7,8 @@ require 'capybara/rspec'
 require 'simplecov'
 require './models/rating'
 require 'database_cleaner'
+require 'simplecov-shield'
+SimpleCov.formatter = SimpleCov::Formatter::ShieldFormatter
 
 Capybara.app = FTFeedback
 SimpleCov.start
