@@ -78,7 +78,8 @@ V2: You are asked for a rating on a hosted website  (MVP)
 
 V3: You can see previous (all ratings) on another page, previous ratings
 
-V4: Make it stylish, to look like the FT
+V4: (Extras) Make it stylish, to look like the FT
+
 
 ## How to use  <a name= "use"> </a>
 First make sure you have Ruby 2.4.0+ and MySQL installed

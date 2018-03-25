@@ -8,10 +8,11 @@
     <% flash.keys.each do |type| %>
       <%= flash[type] %>
     <% end %>
-    <h1>welcome to the FT's rating site</h1>
+    <h1>Welcome to the FT's rating site</h1>
     <form action='/' method='post'>
       <% @rating_range.each do |score| %>
-        <%= "<input type='radio' name='rating' value=#{score} id=#{score} class='rating'>" %>
+        <%=  "<label for='score_#{score}'>#{score}</label>" %>
+        <%= "<input type='radio' name='rating' value=#{score} id=score_#{score} class='rating'>" %>
       <% end %>
       <input type='submit' value='Submit' />
     </form>
