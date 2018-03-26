@@ -1,10 +1,10 @@
 
 <h2 align="center"> FT Feedback Site </h2>
-<h3 align="center"> Want to say your option on the FT? Here's the place to go </h3>
+<h3 align="center"> Have a look at the new reviews site for the FT <a href='https://shrouded-mesa-54307.herokuapp.com/ratings/new'>here</a> </h3>
 
  <p align="center">  <a href='#scenario'>Scenario</a> |  <a href='#approach'>Approach</a>   |   <a href='#reflections'>Reflections</a> |   <a href='#version'>Versions</a> |  <a href='#use'>How to use</a>   |   <a href='#tech'>Tech</a> | <a href='#architecture'>Architecture</a> 
 
-<h3 align="center"> Have a look at the site  <a href='https://shrouded-mesa-54307.herokuapp.com/ratings/new'>here</a> </h3>
+
 
 ## Scenario  <a name= "scenario"></a>
 
@@ -72,7 +72,7 @@ V4: (Extras) Make it stylish, to look like the FT
   - [x] Align everything in the site well
   - [ ] Make the submit button look nicer and link to the next page
   - [ ] Sort out the reviews page
-  - [ ] Upload diagrams
+  - [x] Upload diagrams
 
 ## How to use  <a name= "use"> </a>
 First make sure you have Ruby 2.4.0+ and MySQL installed
