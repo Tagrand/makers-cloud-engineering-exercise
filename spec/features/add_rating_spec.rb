@@ -13,16 +13,14 @@ feature 'visit site add a rating' do
   end
 
   scenario 'of five stars and recieve confirmation' do
-    choose(5)
-    click_button 'Submit'
+    add_rating
     expect(page).not_to have_content('Score must not be blank')
     expect(page).to have_content('Thanks for your feedback!')
     expect(page).to have_content('Rating: 5')
   end
 
   scenario 'and it stored in the database' do
-    choose(5)
-    expect { click_button 'Submit' }.to change(Rating, :count).by 1
+    expect { add_rating  }.to change(Rating, :count).by 1
   end
 
   scenario 'no score gets error' do
@@ -32,11 +30,9 @@ feature 'visit site add a rating' do
   end
 
   scenario 'add two ratings, view the results' do
-    choose(1)
-    click_button 'Submit'
+    add_rating(1)
     click_link 'Give a review'
-    choose(2)
-    click_button 'Submit'
+    add_rating(2)
     expect(page).to have_content('Rating: 1')
     expect(page).to have_content('Rating: 2')
     expect(page).not_to have_content('Rating: 3')

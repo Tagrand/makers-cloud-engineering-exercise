@@ -7,6 +7,7 @@ require 'capybara/rspec'
 require 'simplecov'
 require './models/rating'
 require 'database_cleaner'
+require './spec/features/web_helper.rb'
 
 Capybara.app = FTFeedback
 SimpleCov.start
