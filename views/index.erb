@@ -2,7 +2,7 @@
 <h2>For the full perspective on our readers - please give us a rating</h1>
 
 <form action='/ratings' method='post' class="o-forms">
-  <legend class="o-forms__label">Pick your rating of our site</legend>
+  <legend class="o-forms__label">Pick your rating</legend>
   <div class="o-forms__group o-forms__group--inline-together">
       <% @rating_range.each do |score| %>
         <%= "<input type='radio' name='rating' value=#{score} id=score_#{score} class='o-forms__radio-button rating'>" %>
