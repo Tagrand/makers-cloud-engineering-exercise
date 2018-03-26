@@ -79,6 +79,7 @@ V2: You are asked for a rating on a hosted website  (MVP)
   - [x] Deploy up the site on AWS
 
 V3: You can see previous (all ratings) on another page, previous ratings
+  - [x] Second page with all previous ratings shown 
 
 V4: (Extras) Make it stylish, to look like the FT
   - [ ] Add Origimi style
