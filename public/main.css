@@ -13,10 +13,17 @@ h1 {
 
 legend {
   font-size: 25px;
+  margin: 5vh 0vh 3vh 0vh;
 }
 
 .errortext {
-  color: #cc0000
+  margin-top: 1vh;
+  color: #cc0000;
+  height: 50px;
+}
+
+.o-buttons {
+  margin: 1vh 0 15vh 0;
 }
 
 .o-forms {
