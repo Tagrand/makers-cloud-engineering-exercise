@@ -1,5 +1,3 @@
-require 'simplecov-shield'
-SimpleCov.formatter = SimpleCov::Formatter::ShieldFormatter
 
 <h2 align="center"> FT Feedback Site </h2>
 <h3 align="center"> Want to say your option on the FT? Here's the place to go </h3>
