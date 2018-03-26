@@ -27,20 +27,20 @@ My focus is to break down the task into lots of smaller steps - to this I create
 This approach to design is something I am trialing so any feedback would be really helpful. In my commits I've tried to add explanations for the order of my decisions.
 
 #### Tech
-I decided to do the task in Ruby, as this website is quite light and I felt that doing it with Sinatra and Datamapper nice and simple tools for the job. This would give me space to challenge myself in other ways (particularly using AWS for the first time.) My original plan was to use AWS, but I set a fixed period of time to achieve this as I knew it could be tricky. In the end I deployed with Heroku, but you can read my  <a name= "reflections"> reflection</a> to see what I learnt and my reasoning to go to Heroku.
+I decided to do the task in Ruby, as this website is quite light and I felt that doing it with Sinatra and Datamapper nice and simple tools for the job. My original plan was to use AWS, but I set a fixed period of time to achieve this as I knew it could be tricky. In the end I deployed with Heroku, but you can read my  <a name= "reflections"> reflections</a> to see what I learnt and my reasoning to go to Heroku.
 
 #### Targets (Written before starting) - no more than 4 points
 - Only focus on reaching a checkpoint, don't worry about the extra complexity until you get there.
-- Use AWS to deploy the website
+- Try to use AWS to deploy the website
 - Keep it as simple as possible
 - Reflect on my architecture and design frequently (especially at designated checkpoints) to check if there is any way of improving it further.
 
 ## Reflection <a name= "reflections"> </a>
 I've been pleased with keeping the programme simple and leaving it extendable in the future. In terms of design, I found gradual increase rather than planning it all first worked well.
 
-Part of me still thinks I should have gone with a JSON file or another file to store ratings, rather than a full MySQL database. However, I decided to stick with it, since I wanted to show I could integrate a website with a database on a cloud platform. But probably doing this again, I'd try just using something lighter to see how well this works.
+Part of me thinks I should have gone with a JSON file or another file to store ratings, rather than a full MySQL database. However, I decided to stick with it, since I wanted to show I could integrate a website with a database on a cloud platform. But probably doing this again, I'd try just using something lighter to see how well this works.
 
-Deployment has been my greatest challenge. I timeboxed a period to see if I could succeed in deploying to AWS. I've learnt alot about deployment, but I ended up pausing it as it was taking too long to achieve. This is something I want to explore more. One thing I would like to do is deploy a practise static site with no database first, and then practise hooking up a database. But I was glad I moved in small steps, as I only had to reset one step to go back to pre-aws attempts.
+Deployment has been my greatest challenge. I timeboxed a period to see if I could succeed in deploying to AWS. I've learnt alot about deployment, but I ended up pausing it as it was taking too long to achieve. This is something I want to explore more. One thing I would like to do is deploy a practise site with no database first, and then practise hooking up a database. But I was glad I moved in small steps, as I only had to make not too many changes to change to deploying with heroku. 
 
 #### With more time I would have:
   - Built a sandbox project, deployed it to AWS and then deployed this site to AWS too (something
