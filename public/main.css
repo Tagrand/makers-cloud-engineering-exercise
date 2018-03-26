@@ -16,6 +16,10 @@ legend {
   margin: 5vh 0vh 3vh 0vh;
 }
 
+td {
+  width:175px;
+}
+
 .errortext {
   margin-top: 1vh;
   color: #cc0000;
@@ -24,6 +28,11 @@ legend {
 
 .o-buttons {
   margin: 1vh 0 15vh 0;
+}
+
+.ratings_list {
+  width: 350px;
+  text-align: center;
 }
 
 .o-forms {
