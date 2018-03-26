@@ -2,7 +2,7 @@
 <h2 align="center"> FT Feedback Site </h2>
 <h3 align="center"> Have a look at the new reviews site for the FT <a href='https://shrouded-mesa-54307.herokuapp.com/ratings/new'>here</a> </h3>
 
- <p align="center">  <a href='#scenario'>Scenario</a> |  <a href='#approach'>Approach</a>   |   <a href='#reflections'>Reflections</a> |   <a href='#version'>Versions</a> |  <a href='#use'>How to use</a>   |   <a href='#tech'>Tech</a> | <a href='#architecture'>Architecture</a> 
+ <p align="center">  <a href='#scenario'>Scenario</a> |  <a href='#approach'>Approach</a>   |   <a href='#reflections'>Reflections</a> |   <a href='#version'>Versions</a> |  <a href='#use'>How to use</a>   |   <a href='#tech'>Tech</a> | <a href='#architecture'>Architecture</a>
 
 
 
@@ -70,8 +70,8 @@ V4: (Extras) Make it stylish, to look like the FT
   - [x] Draw diagram of architecture of site
   - [x] Write reflections and tidy up readme
   - [x] Align everything in the site well
-  - [ ] Make the submit button look nicer and link to the next page
-  - [ ] Sort out the reviews page
+  - [x] Make the submit button look nicer and link to the next page
+  - [x] Sort out the reviews page
   - [x] Upload diagrams
 
 ## How to use  <a name= "use"> </a>
