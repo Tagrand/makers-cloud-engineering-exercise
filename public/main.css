@@ -6,5 +6,8 @@ body {
 h1 {
   font-size: 30px;
   font-family: FinancierDisplayWeb, serif;
+}
 
+.errortext {
+  color: #cc0000
 }
