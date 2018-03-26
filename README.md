@@ -52,6 +52,7 @@ Deployment has been my greatest challenge. I timeboxed a period to see if I coul
 
 ## Architecture <a name= "architecture"> </a>
 
+![Simple](docs/images/Architecture_simple.jpg)
 
 ## Versions <a name= "versions"> </a>
 
