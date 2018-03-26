@@ -1,6 +1,20 @@
-
-<% @ratings.each do |rating| %>
- <%= "Rating: #{rating.score}" %>
-<% end %>
-
-<a href='/ratings/new'>Give a review</a>
+<h2>Have a look at our ratings here, or even <a href='/ratings/new'>give a review here</a> </h1>
+<table class="o-table o-table--row-stripes" data-o-component="o-table">
+  <caption class="o-table__caption--top">
+		All Reviews have been checked, and reviewed for accuracy
+	</caption>
+  <thead>
+        <tr>
+      <th> Rating </th>
+       <th> Accuracy of Review </th>
+     </tr>
+  </thead>
+  <tbody>
+    <% @ratings.each do |rating| %>
+      <tr>
+      <td>Rating: <%= rating.score %></td>
+      <td> <%= "#{(rating.score / 5.0 *100).round}% " %></td>
+     </tr>
+    <% end %>
+   </tbody>
+</table>
