@@ -107,3 +107,4 @@ Datamapper
 
 ![Simple](docs/images/Architecture_simple.png)
 ![Less_simple](docs/images/Architecture_heroku.png)
+![Most Complex](docs/images/Architecture_complex.png)
