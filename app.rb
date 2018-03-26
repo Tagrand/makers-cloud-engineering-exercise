@@ -12,19 +12,24 @@ class FTFeedback < Sinatra::Base
   register Sinatra::Flash
 
   get '/' do
+    redirect '/reviews/new'
+  end
+
+  get '/reviews/new' do
     @rating_range = (Rating::MIN_SCORE..Rating::MAX_SCORE)
     erb :index
   end
 
-  post '/' do
+  post '/reviews' do
     score = params[:rating].to_i unless params[:rating].nil?
     result = Rating.new(score: score)
     if result.save
       flash.next[:message] = 'Thanks for your feedback!'
+      redirect '/reviews'
     else
       flash.next[:error] = result.score_messages
+      redirect 'reviews/new'
     end
-    redirect '/'
   end
 
   get '/reviews' do
