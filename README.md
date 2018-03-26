@@ -4,7 +4,7 @@
 
  <p align="center">  <a href='#scenario'>Scenario</a> |  <a href='#approach'>Approach</a>   |   <a href='#reflections'>Reflections</a> |   <a href='#version'>Versions</a> |  <a href='#use'>How to use</a>   |   <a href='#tech'>Tech</a> | <a href='#architecture'>Architecture</a> 
 
-<h3 align="center"> Have a look at the site [here](https://shrouded-mesa-54307.herokuapp.com/ratings/new) </h3>
+<h3 align="center"> Have a look at the site  <a href='https://shrouded-mesa-54307.herokuapp.com/ratings/new'>here</a> </h3>
 
 ## Scenario  <a name= "scenario"></a>
 
