@@ -73,6 +73,7 @@ V4: (Extras) Make it stylish, to look like the FT
   - [x] Draw diagram of architecture of site
   - [x] Write reflections and tidy up readme
   - [x] Align everything in the site well
+  - [ ] Make the submit button look nicer and link to the next page
   - [ ] Sort out the reviews page
   - [ ] Upload diagrams
 
