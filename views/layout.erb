@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+    <% flash.keys.each do |type| %>
+      <%=flash[type] %>
+    <% end %>
+   <%= yield %>
+ </body>
+</html>

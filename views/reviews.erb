@@ -1,9 +1,6 @@
-<% flash.keys.each do |type| %>
-  <%=flash[type] %>
-<% end %>
 
 <% @reviews.each do |review| %>
  <%= "Rating: #{review.score}" %>
 <% end %>
 
-  <a href="/">Give a review</a>
+<a href="/">Give a review</a>

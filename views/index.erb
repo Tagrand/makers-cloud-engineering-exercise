@@ -1,21 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title></title>
-  </head>
-  <body>
-    <% flash.keys.each do |type| %>
-      <%=flash[type] %>
-    <% end %>
-    <h1>Welcome to the FT's rating site</h1>
-    <form action='/reviews' method='post'>
-      <% @rating_range.each do |score| %>
-        <%= "<label for='score_#{score}'>#{score}</label>" %>
-        <%= "<input type='radio' name='rating' value=#{score} id=score_#{score} class='rating'>" %>
-      <% end %>
-      <input type='submit' value='Submit' />
-    </form>
-    <a href="/reviews">See all reviews</a>
-  </body>
-</html>
+
+<h1>Welcome to the FT's rating site</h1>
+
+<form action='/reviews' method='post'>
+  <% @rating_range.each do |score| %>
+    <%= "<label for='score_#{score}'>#{score}</label>" %>
+    <%= "<input type='radio' name='rating' value=#{score} id=score_#{score} class='rating'>" %>
+  <% end %>
+  <input type='submit' value='Submit' />
+</form>
+
+<a href="/reviews">See all reviews</a>
