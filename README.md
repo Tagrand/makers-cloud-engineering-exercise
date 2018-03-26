@@ -5,7 +5,6 @@
  <p align="center">  <a href='#scenario'>Scenario</a> |  <a href='#approach'>Approach</a>   |   <a href='#reflections'>Reflections</a> |   <a href='#versions'>Versions</a> |  <a href='#use'>How to use</a>   |   <a href='#tech'>Tech</a> | <a href='#architecture'>Architecture</a>
 
 
-
 ## Scenario  <a name= "scenario"></a>
 
 Build a website hosted in the cloud (e.g. AWS, Google, Heroku) that asks for and stores a simple
@@ -22,7 +21,7 @@ Provide a diagram of your site architecture showing key compnents that illustrat
 ## Approach <a name= "approach"> </a>
 
 #### Design
-My focus is to break down the task into lots of smaller steps - to this I created versions, <a href='#version'>see below</a>, at the start of the project to act as checkpoints. My reasonsing for this, was rather than design everything in one go and then go off and code, I had clear points to stop, reflect and adapt my plans. Also by focusing on reaching the smaller targets, I keep my programme simpler to start with and if I turn out to do something badly, its easier to turn back and change.
+My focus is to break down the task into lots of smaller steps - to this I created versions, <a href='#versions'>see below</a>, at the start of the project to act as checkpoints. My reasonsing for this, was rather than design everything in one go and then go off and code, I had clear points to stop, reflect and adapt my plans. Also by focusing on reaching the smaller targets, I keep my programme simpler to start with and if I turn out to do something badly, its easier to turn back and change.
 
 This approach to design is something I am trialing so any feedback would be really helpful. In my commits I've tried to add explanations for the order of my decisions.
 
@@ -35,7 +34,7 @@ I decided to do the task in Ruby, as this website is quite light and I felt that
 - Keep it as simple as possible
 - Reflect on my architecture and design frequently (especially at designated checkpoints) to check if there is any way of improving it further.
 
-## Reflection <a name= "reflections"> </a>
+## Reflections <a name= "reflections"> </a>
 I've been pleased with keeping the programme simple and leaving it extendable in the future. In terms of design, I found gradual increase rather than planning it all first worked well.
 
 Part of me thinks I should have gone with a JSON file or another file to store ratings, rather than a full MySQL database. However, I decided to stick with it, since I wanted to show I could integrate a website with a database on a cloud platform. But probably doing this again, I'd try just using something lighter to see how well this works.
