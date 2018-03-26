@@ -31,10 +31,12 @@ feature "visit site add a rating" do
 
   scenario "add two ratings, view the results" do
     add_rating(1)
-    click_link "Give a review"
+    click_link "give a review"
     add_rating(2)
     expect(page).to have_content("Rating: 1")
+    expect(page).to have_content("20%")
     expect(page).to have_content("Rating: 2")
+    expect(page).to have_content("40%")
     expect(page).not_to have_content("Rating: 3")
   end
 end
