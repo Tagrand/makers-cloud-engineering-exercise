@@ -50,10 +50,6 @@ Deployment has been my greatest challenge. I timeboxed a period to see if I coul
   - Added comments to the feedback
   - Read more about infrastructure as code
 
-## Architecture <a name= "architecture"> </a>
-
-![Simple](docs/images/Architecture_simple.jpg)
-
 ## Versions <a name= "versions"> </a>
 
 V1: You are asked for a rating on a locally hosted website and it stores the ratings  
@@ -106,3 +102,8 @@ Sinatra
 MySQL
 Heroku
 Datamapper
+
+## Architecture <a name= "architecture"> </a>
+
+![Simple](docs/images/Architecture_simple.png)
+![Less_simple](docs/images/Architecture_heroku.png)
