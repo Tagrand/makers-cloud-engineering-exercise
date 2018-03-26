@@ -22,12 +22,6 @@ Provide a diagram of your site architecture showing key compnents that illustrat
  - Origami Compnents/FT look and feel
  - The ability to view the ratings/results
 
- *Potential tools*
- - AWS (EC2, RDS, Lambda, DynamoDB)
- - Cloudformation
- - Docker
- - Ansible
-
 ## Approach <a name= "approach"> </a>
 
 My focus is to break down the task into lots of smaller steps - to this I created versions at the start of the project to act as checkpoints.
@@ -59,7 +53,12 @@ Deployment has been my greatest challenge. I timeboxed a period to see if I coul
 Now all I need to do is implement continous integration to achieve verson 2.
 
 #### With more time I would have:
-  - Built a sandbox project, deployed it to AWS and then deployed this site to aws too
+  - Built a sandbox project, deployed it to AWS and then deployed this site to AWS too (something
+    I will be exploring further)
+  - Integrated CI (I started to do this Travis, but there were issues with mySQL and it. So
+    as it was extra I left it for if I had time.)
+  - Added comments to the feedback
+  - Read more about infrastructure as code
 
 ## Architecture <a name= "architecture"> </a>
 
@@ -76,15 +75,17 @@ V1: You are asked for a rating on a locally hosted website and it stores the rat
 - [x] Complete
 
 V2: You are asked for a rating on a hosted website  (MVP)
-  - [x] Deploy up the site on AWS
+  - [x] Deploy up the site on Heroku
 
 V3: You can see previous (all ratings) on another page, previous ratings
-  - [x] Second page with all previous ratings shown 
+  - [x] Second page with all previous ratings shown
 
 V4: (Extras) Make it stylish, to look like the FT
-  - [ ] Add Origimi style
-  - [ ] Set up Travis for Github
-
+  - [x] Add Origimi style
+  - [ ] Draw diagram of architecture of site
+  - [ ] Write reflections and tidy up readme
+  - [ ] Align everything in the site well
+  - [ ] Add screenshots
 
 ## How to use  <a name= "use"> </a>
 First make sure you have Ruby 2.4.0+ and MySQL installed
@@ -95,8 +96,7 @@ Then set up a Dev and Test database in the MySQL bash
 ```CREATE DATABASE ft_test;```
 ```CREATE DATABASE ft_development;```
 
-I've called the user ft@localhost, you can either give this permissions to these two databases, or change the
-user in the ratings file. Either way in my MySQL base:
+I've called the user ft@localhost, you can either give this permissions to these two databases, or change the user in the models/ratings.rb file. Either way in my MySQL base:
 ```
 GRANT ALL PRIVILEGES ON ft_test.* TO 'ft'@'localhost;'
 GRANT ALL PRIVILEGES ON ft_development.* TO 'ft'@'localhost;' ```
@@ -114,4 +114,6 @@ GRANT ALL PRIVILEGES ON ft_development.* TO 'ft'@'localhost;' ```
 ## Tech <a name= "tech"> </a>
 Ruby
 Sinatra   
-MySQL (I've used SQLite3 and PSQL so I wanted to try this out, also I believe it works well with AWS)
+MySQL
+Heroku
+Datamapper
