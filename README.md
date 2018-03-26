@@ -2,9 +2,9 @@
 <h2 align="center"> FT Feedback Site </h2>
 <h3 align="center"> Want to say your option on the FT? Here's the place to go </h3>
 
- <p align="center">  <a href='#scenario'>Scenario</a> |  <a href='#approach'>Approach</a>   |   <a href='#reflections'>Reflections</a> |  <a href='#architecture'>Architecture</a> |  <a href='#version'>Versions</a> |  <a href='#use'>How to use</a>   |   <a href='#tech'>Tech</a>
+ <p align="center">  <a href='#scenario'>Scenario</a> |  <a href='#approach'>Approach</a>   |   <a href='#reflections'>Reflections</a> |   <a href='#version'>Versions</a> |  <a href='#use'>How to use</a>   |   <a href='#tech'>Tech</a> | <a href='#architecture'>Architecture</a> 
 
-# Add build status and Coverage
+<h3 align="center"> Have a look at the site [here](https://shrouded-mesa-54307.herokuapp.com/ratings/new) </h3>
 
 ## Scenario  <a name= "scenario"></a>
 
@@ -104,6 +104,7 @@ Heroku
 Datamapper
 
 ## Architecture <a name= "architecture"> </a>
+#### A few diagrams of the site structure (apologies for my handwriting!)
 
 ![Simple](docs/images/Architecture_simple.png)
 ![Less_simple](docs/images/Architecture_heroku.png)
