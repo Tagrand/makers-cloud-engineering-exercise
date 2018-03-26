@@ -1,4 +1,10 @@
 body {
   background-color: #fff1e5;
-  font-family: MetricWeb, serif;
+  font-family: FinancierDisplayWeb, serif;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: FinancierDisplayWeb, serif;
+
 }

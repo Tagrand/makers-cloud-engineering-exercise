@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://build.origami.ft.com/v2/bundles/css?modules=o-fonts@^3.0.4" />
+    <link rel="stylesheet" href="https://build.origami.ft.com/v2/bundles/css?modules=o-forms@^5.2.3" />
     <link rel="shortcut icon" href="https://www.ft.com/__origami/service/image/v2/images/raw/ftlogo-v1%3Abrand-ft-logo-square-coloured?source=update-logos&width=32&height=32&format=png" />
     <link rel="stylesheet" type="text/css" href="/main.css">
     <title> Financial Times: Rate it </title>
   </head>
   <body>
-    <% flash.keys.each do |type| %>
-      <%=flash[type] %>
-    <% end %>
+    <%= flash[:message] %>
+    <h1> Financial Times</h1>
    <%= yield %>
  </body>
 </html>
