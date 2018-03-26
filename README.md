@@ -2,8 +2,7 @@
 <h2 align="center"> FT Feedback Site </h2>
 <h3 align="center"> Want to say your option on the FT? Here's the place to go </h3>
 
- <p align="center">  <a href='#scenario'>Scenario</a> |  <a href='#approach'>Approach</a>   |   <a href='#reflections'>Reflections</a> |  <a href='#architecture'>Architecture</a> |  <a href='#user_stories'>Versions</a>
- <a href='#screen_shots'>Screen Shots</a> |  <a href='#use'>How to use</a>   |   <a href='#tech'>Tech</a>
+ <p align="center">  <a href='#scenario'>Scenario</a> |  <a href='#approach'>Approach</a>   |   <a href='#reflections'>Reflections</a> |  <a href='#architecture'>Architecture</a> |  <a href='#version'>Versions</a> |  <a href='#use'>How to use</a>   |   <a href='#tech'>Tech</a>
 
 # Add build status and Coverage
 
@@ -15,23 +14,20 @@ rating score for using ft.com
 Provide a diagram of your site architecture showing key compnents that illustrate your approach.
 
 *Extra*
- - Templated infrastructure as code
+ - Templated infrastructure as code  
  - Automated testing
  - Origami Compnents/FT look and feel
  - The ability to view the ratings/results
 
 ## Approach <a name= "approach"> </a>
 
-My focus is to break down the task into lots of smaller steps - to this I created versions at the start of the project to act as checkpoints.
-My reasonsing for this, was rather than design everything in one go and then go off and code, I had clear points to stop, reflect and adapt my plans.  
-Also by focusing on reaching the smaller targets, I keep my programme simpler to start with and if I turn out to do something badly, its easier to turn back and change.
+#### Design
+My focus is to break down the task into lots of smaller steps - to this I created versions, <a href='#version'>see below</a>, at the start of the project to act as checkpoints. My reasonsing for this, was rather than design everything in one go and then go off and code, I had clear points to stop, reflect and adapt my plans. Also by focusing on reaching the smaller targets, I keep my programme simpler to start with and if I turn out to do something badly, its easier to turn back and change.
 
 This approach to design is something I am trialing so any feedback would be really helpful. In my commits I've tried to add explanations for the order of my decisions.
 
-I decided to do the task in Ruby, as this website is quite light and I felt that doing it with Sinatra and Datamapper were simple
-enough tools for the job. This would give me space to challenge myself in other ways (particularly using AWS for the first time.)
-My original plan is to use AWS to deploy the site as a challenge, as there seems to be good support for Ruby and
-its totally new to me (but is also heavily used by the FT.) Also I have added a version where I use Origimi, because this looks great.
+#### Tech
+I decided to do the task in Ruby, as this website is quite light and I felt that doing it with Sinatra and Datamapper nice and simple tools for the job. This would give me space to challenge myself in other ways (particularly using AWS for the first time.) My original plan was to use AWS, but I set a fixed period of time to achieve this as I knew it could be tricky. In the end I deployed with Heroku, but you can read my  <a name= "reflections"> reflection</a> to see what I learnt and my reasoning to go to Heroku.
 
 #### Targets (Written before starting) - no more than 4 points
 - Only focus on reaching a checkpoint, don't worry about the extra complexity until you get there.
@@ -40,15 +36,11 @@ its totally new to me (but is also heavily used by the FT.) Also I have added a 
 - Reflect on my architecture and design frequently (especially at designated checkpoints) to check if there is any way of improving it further.
 
 ## Reflection <a name= "reflections"> </a>
-V1 reflections
-Having reached version one. I've been pleased with keeping the programme simple and leaving it extendable in the future. It would have been good to have focused on making a one page site from the start, as this is the simplest way to meet the brief. However, I definately want to improve on my commit messages. Also I have forgotten to run rubocop at several points. So I have put reminders whenever I run rspec to run rubocop and rspec.
+I've been pleased with keeping the programme simple and leaving it extendable in the future. In terms of design, I found gradual increase rather than planning it all first worked well.
 
-Part of me still thinks I should have gone with a JSON file or another file to store ratings, rather than a full MySQL database. However, I decided to stick with it, since I wanted to show I could integrate a website with a database on a cloud platform. But probably doing this again, I'd try just using a JSON file.
+Part of me still thinks I should have gone with a JSON file or another file to store ratings, rather than a full MySQL database. However, I decided to stick with it, since I wanted to show I could integrate a website with a database on a cloud platform. But probably doing this again, I'd try just using something lighter to see how well this works.
 
-V2 Reflections
-Deployment has been my greatest challenge. I timeboxed a period to see if I could succeed in deploying to AWS. I've learnt alot about deployment, but I ended up pausing it as it was taking too long to achieve. This is something I want to explore more. One thing I would like to do is deploy a sandboxed static site with no database first, and then practise hooking up a database. But I was glad I moved in small steps, as I only had to reset one step to go back to before. The second challenge came when deploying to heroku. On reflection I should have taken a significant break after this challenge, and I started it to rush it. So I pulled back. Took some time. And came back and managed to deploy my site easily.
-
-Now all I need to do is implement continous integration to achieve verson 2.
+Deployment has been my greatest challenge. I timeboxed a period to see if I could succeed in deploying to AWS. I've learnt alot about deployment, but I ended up pausing it as it was taking too long to achieve. This is something I want to explore more. One thing I would like to do is deploy a practise static site with no database first, and then practise hooking up a database. But I was glad I moved in small steps, as I only had to reset one step to go back to pre-aws attempts.
 
 #### With more time I would have:
   - Built a sandbox project, deployed it to AWS and then deployed this site to AWS too (something
@@ -61,7 +53,7 @@ Now all I need to do is implement continous integration to achieve verson 2.
 ## Architecture <a name= "architecture"> </a>
 
 
-## Versions <a name= "user_stories"> </a>
+## Versions <a name= "versions"> </a>
 
 V1: You are asked for a rating on a locally hosted website and it stores the ratings  
   - [x] You can visit a site
@@ -69,8 +61,6 @@ V1: You are asked for a rating on a locally hosted website and it stores the rat
   - [x] You can store the rating in a database
   - [x] Make it a single page site
   - [x] You can only add ratings of 1 - 5
-
-- [x] Complete
 
 V2: You are asked for a rating on a hosted website  (MVP)
   - [x] Deploy up the site on Heroku
@@ -80,11 +70,11 @@ V3: You can see previous (all ratings) on another page, previous ratings
 
 V4: (Extras) Make it stylish, to look like the FT
   - [x] Add Origimi style
-  - [ ] Draw diagram of architecture of site
-  - [ ] Write reflections and tidy up readme
-  - [ ] Align everything in the site well
+  - [x] Draw diagram of architecture of site
+  - [x] Write reflections and tidy up readme
+  - [x] Align everything in the site well
   - [ ] Sort out the reviews page
-  - [ ] Add screenshots
+  - [ ] Upload diagrams
 
 ## How to use  <a name= "use"> </a>
 First make sure you have Ruby 2.4.0+ and MySQL installed
@@ -107,8 +97,6 @@ GRANT ALL PRIVILEGES ON ft_development.* TO 'ft'@'localhost;' ```
 3) Install gems ```bundle```
 4) Run the server ```rackup```
 5) Visit [localhost:9292](localhost:9292) to see it all in glory!  
-
-## Screen shots <a name= "screen_shots"> </a>
 
 ## Tech <a name= "tech"> </a>
 Ruby
