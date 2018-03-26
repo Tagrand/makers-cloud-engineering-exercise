@@ -8,7 +8,6 @@ gem 'data_mapper'
 gem 'dm-migrations'
 gem 'dm-mysql-adapter'
 gem 'dotenv'
-gem 'simplecov-shield'
 gem 'sinatra'
 gem 'sinatra-flash'
 

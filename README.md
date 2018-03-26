@@ -76,12 +76,13 @@ V1: You are asked for a rating on a locally hosted website and it stores the rat
 - [x] Complete
 
 V2: You are asked for a rating on a hosted website  (MVP)
-  - [ ] Set up Travis for Github
   - [x] Deploy up the site on AWS
 
 V3: You can see previous (all ratings) on another page, previous ratings
 
 V4: (Extras) Make it stylish, to look like the FT
+  - [ ] Add Origimi style
+  - [ ] Set up Travis for Github
 
 
 ## How to use  <a name= "use"> </a>

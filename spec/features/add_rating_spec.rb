@@ -29,4 +29,15 @@ feature 'visit site add a rating' do
     expect(page).to have_content('Score must not be blank')
     expect(page).not_to have_content('Thanks for your feedback!')
   end
+
+  scenario 'add two ratings, view the results' do
+    choose(1)
+    click_button 'Submit'
+    choose(2)
+    click_button 'Submit'
+    click_link 'See all reviews'
+    expect(page).to have_content('Rating: 1')
+    expect(page).to have_content('Rating: 2')
+    expect(page).not_to have_content('Rating: 3')
+  end
 end

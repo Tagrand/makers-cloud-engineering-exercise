@@ -26,4 +26,9 @@ class FTFeedback < Sinatra::Base
     end
     redirect '/'
   end
+
+  get '/reviews' do
+    @reviews = Rating.all
+    erb :reviews
+  end
 end
