@@ -1,7 +1,7 @@
 
 <h1>Welcome to the FT's rating site</h1>
 
-<form action='/reviews' method='post'>
+<form action='/ratings' method='post'>
   <% @rating_range.each do |score| %>
     <%= "<label for='score_#{score}'>#{score}</label>" %>
     <%= "<input type='radio' name='rating' value=#{score} id=score_#{score} class='rating'>" %>
@@ -9,4 +9,4 @@
   <input type='submit' value='Submit' />
 </form>
 
-<a href="/reviews">See all reviews</a>
+<a href="/ratings">See all reviews</a>
