@@ -9,9 +9,9 @@
         <%= "<label for='score_#{score}' class='o-forms__label'>#{score}</label>"  %>
       <% end %>
   </div>
-  <%= "<div class='errortext'> #{flash[:error]} </p>" %>
-  <input type='submit' value='Submit' />
+  <%= "<div class='errortext'> #{flash[:error]} </div>" %>
+  <input type='submit' value='Submit' class='o-buttons o-buttons--primary o-buttons--big' />
 
 </form>
-
+</div>
 <a href='/ratings'>See all reviews</a>

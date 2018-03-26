@@ -85,6 +85,7 @@ V4: (Extras) Make it stylish, to look like the FT
   - [ ] Draw diagram of architecture of site
   - [ ] Write reflections and tidy up readme
   - [ ] Align everything in the site well
+  - [ ] Sort out the reviews page
   - [ ] Add screenshots
 
 ## How to use  <a name= "use"> </a>

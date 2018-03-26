@@ -1,13 +1,20 @@
 body {
   background-color: #fff1e5;
-  font-family: FinancierDisplayWeb, serif;
+  font-family: Metricweb, serif;
+  text-align: center
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 65px;
   font-family: FinancierDisplayWeb, serif;
+  font-weight: lighter;
+  opacity: 0.8;
 }
 
 .errortext {
   color: #cc0000
+}
+
+.o-forms {
+  max-width: 600px;
 }
