@@ -4,17 +4,17 @@
 		All Reviews have been checked, and reviewed for accuracy
 	</caption>
   <thead>
-        <tr>
+    <tr>
       <th> Rating </th>
-       <th> Accuracy of Review </th>
-     </tr>
+      <th> Accuracy of Review </th>
+    </tr>
   </thead>
   <tbody>
     <% @ratings.each do |rating| %>
       <tr>
-      <td>Rating: <%= rating.score %></td>
-      <td> <%= "#{(rating.score / 5.0 *100).round}% " %></td>
-     </tr>
+        <td>Rating: <%= rating.score %></td>
+        <td> <%= "#{(rating.score / 5.0 *100).round}% " %></td>
+      </tr>
     <% end %>
    </tbody>
 </table>
